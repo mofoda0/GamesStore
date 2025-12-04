@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamestore - home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c271b14d42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/main/homepage.css">
+    <link rel="stylesheet" href="../../css/main/navbar.css">
+    <link rel="stylesheet" href="../../css/main/sidebar.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="../../images/cart-shopping-solid-full.svg">
+</head>
+
+<body>
+    <input type="checkbox" id="sidebar-toggle">
+    <label for="sidebar-toggle" class="hamburger">
+        <i class="fa-solid fa-bars fa-lg"></i>
+    </label>
+
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">Games Store</div>
+                <label for="sidebar-toggle" class="close-sidebar">
+                    <i class="fa-solid fa-times fa-lg"></i>
+                </label>
+            </div>
+            
+            <nav class="menu">
+                <a href="home.html" class="menu-item active">
+                    <i class="fa-solid fa-house fa-lg"></i>
+                    <span>Home</span>
+                </a>
+                <a href="library.html" class="menu-item">
+                    <i class="fa-solid fa-book fa-lg"></i>
+                    <span>Library</span>
+                </a>
+                <a href="community.html" class="menu-item">
+                    <i class="fa-solid fa-city fa-lg"></i>
+                    <span>Community</span>
+                </a>
+                <a href="friends.html" class="menu-item">
+                    <i class="fa-solid fa-users fa-lg"></i>
+                    <span>Friends</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-question fa-lg"></i>
+                    <span>Help</span>
+                </a>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header class="top">
+                <input type="text" placeholder="Search orders" class="search">
+
+                <div class="top-right">
+                    <button class="mainBtn"><i class="fa-solid fa-bell fa-lg"></i></button>
+                    <button class="mainBtn"><i class="fa-solid fa-basket-shopping fa-lg"></i></button>
+                    <button class="signInBtn" onclick="location.href='../../home.html'">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span>Log out</span>
+                    </button>
+                    <button class="profileBtn">
+                        <i class="fa-solid fa-circle-user fa-2xl"></i>
+                        <span>Profile</span>
+                    </button>
+                </div>
+            </header>
+
+            <section class="hero">
+                <div class="hero-main">
+                    <img src="../../images/heroimage.png" class="hero-image" alt="Stray Game">
+
+                    <div class="hero-tags">
+                        <span>Cats</span>
+                        <span>Adventure</span>
+                        <span>Cyberpunk</span>
+                        <span>Atmospheric</span>
+                        <span class="plus">+</span>
+                    </div>
+
+                    <div class="hero-title">Stray</div>
+
+                    <div class="hero-friends">
+                        <i class="fa-solid fa-circle-user friend"></i>
+                        <i class="fa-solid fa-circle-user friend"></i>
+                        <i class="fa-solid fa-circle-user friend"></i>
+                        <span>12 friends</span>
+                    </div>
+                </div>
+
+                <div class="hero-side">
+                    <div class="heroSideContainor">
+                        <div class="side-top">
+                            <h2>Stray</h2>
+                            <p>
+                                Lost, alone and separated from family, a stray cat must untangle an ancient mystery to escape a long-forgotten cybercity and find their way home.
+                            </p>
+                            <div class="price">$16.99 USD</div>
+                            <button class="buy-btn">Available now</button>
+                        </div>
+                    </div>
+                    <div class="hero-small-imgs">
+                        <img src="../../images/screenshot1.webp" alt="Game Screenshot 1">
+                        <img src="../../images/screenshot2.jpg" alt="Game Screenshot 2">
+                    </div>
+                </div>
+            </section>
+
+            <section class="offers">
+                <h3>Special offers</h3>
+                <div class="offer-grid">
+                    <div class="offer-item"><img src="../../images/howgrats.webp" alt="Howgrats"></div>
+                    <div class="offer-item"><img src="../../images/leagueoflegends.jfif" alt="League of Legends"></div>
+                    <div class="offer-item"><img src="../../images/fifa23.jpg" alt="FIFA 23"></div>
+                    <div class="offer-item"><img src="../../images/callofduty.jpg" alt="Call of Duty"></div>
+                    <div class="offer-item"><img src="../../images/albiononline.jpg" alt="Albion Online"></div>
+                    <div class="offer-item"><img src="../../images/valorant.jpg" alt="Valorant"></div>
+                    <div class="offer-item"><img src="../../images/fortnite.jpg" alt="fortnite"></div>                    
+                    <div class="offer-item"><img src="../../images/warframe.png" alt="Warframe"></div>
+                    <div class="offer-item"><img src="../../images/minecraft.png" alt="Minecraft"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

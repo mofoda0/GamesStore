@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamestore - community</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c271b14d42.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/cart-shopping-solid-full.svg">
+    <link rel="stylesheet" href="../../css/main/sidebar.css">
+    <link rel="stylesheet" href="../../css/main/navbar.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+    <input type="checkbox" id="sidebar-toggle">
+    <label for="sidebar-toggle" class="hamburger">
+        <i class="fa-solid fa-bars fa-lg"></i>
+    </label>
+
+    <div class="app">
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">Games Store</div>
+                <label for="sidebar-toggle" class="close-sidebar">
+                    <i class="fa-solid fa-times fa-lg"></i>
+                </label>
+            </div>
+            
+            <nav class="menu">
+                <a href="../../home.html" class="menu-item">
+                    <i class="fa-solid fa-house fa-lg"></i>
+                    <span>Home</span>
+                </a>
+                <a href="library.html" class="menu-item">
+                    <i class="fa-solid fa-book fa-lg"></i>
+                    <span>Library</span>
+                </a>
+                <a href="community.html" class="menu-item active">
+                    <i class="fa-solid fa-city fa-lg"></i>
+                    <span>Community</span>
+                </a>
+                <a href="friends.html" class="menu-item">
+                    <i class="fa-solid fa-users fa-lg"></i>
+                    <span>Friends</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">    
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-question fa-lg"></i>
+                    <span>Help</span>
+                </a>
+
+            </div>
+        </aside>
+
+        <main class="content">
+            
+            <header class="top">
+                <input type="text" placeholder="Search orders" class="search">
+
+                <div class="top-right">
+                    <button class="mainBtn"><i class="fa-solid fa-basket-shopping fa-lg"></i></button>
+                    <button class="signInBtn">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <span>Sign In</span>
+                    </button>
+                </div>
+            </header>
+        </main>
+    </div>
+</body>
+</html>
