@@ -2,7 +2,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
 }
 
 .login-box{
@@ -103,6 +103,12 @@
         font-size: 1rem;
         color: var(--text-color);
         font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    button:hover{
+        background: rgb(255, 68, 0);
+        transform: translateY(-2px);
     }
 
     .register-link{

@@ -18,7 +18,7 @@ body{
     font-family: "Outfit", sans-serif;
     color: var(--text-color);
    /* background-image: url("../images/background.jpg"); */
-    background: radial-gradient( #ff5500, #000000);
+    background: radial-gradient( var(--primary-color), #000000);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     min-height: 100vh;
@@ -42,232 +42,238 @@ body{
     }
 }
 
-@media (min-width: 768px) {
-    .top {
+@media (min-width: 768px){
+    .top{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
     
-    .search {
+    .search{
         margin: 0;
         width: 300px;
     }
     
-    .hero {
+    .hero{
         flex-direction: row;
     }
     
-    .hero-main {
+    .hero-main{
         flex: 2;
     }
     
-    .hero-side {
+    .hero-side{
         flex: 1;
     }
     
-    .hero-image {
+    .hero-image{
         height: 350px;
     }
     
-    .hero-small-imgs img {
+    .hero-small-imgs img{
         height: 120px;
     }
-    
-    .offer-grid {
+
+    .offer-grid{
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     }
 }
 
-@media (min-width: 1024px) {
-    .sidebar {
+@media (min-width: 1024px){
+    .sidebar{
         position: relative;
         left: 0;
         height: auto;
     }
     
-    .hamburger {
+    .hamburger{
         display: none;
     }
     
-    .close-sidebar {
+    .close-sidebar{
         display: none;
     }
     
-    #sidebar-toggle:checked ~ .app .content {
+    #sidebar-toggle:checked ~ .app .content{
         margin-left: 0;
     }
     
-    .content {
+    .content{
         margin-left: 0;
     }
     
-    .hero-image {
+    .hero-image{
         height: 400px;
     }
     
-    .hero-title {
+    .hero-title{
         font-size: 45px;
     }
     
-    .side-top h2 {
+    .side-top h2{
         font-size: 28px;
     }
     
-    .hero-small-imgs img {
+    .hero-small-imgs img{
         height: 150px;
     }
     
-    .offer-grid {
+    .offer-grid{
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     }
 }
 
-@media (min-width: 1200px) {
-    .hero-image {
+@media (min-width: 1200px){
+    .hero-image{
         height: 450px;
     }
     
-    .offer-grid {
+    .offer-grid{
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-@media (max-width: 767px) {
-    .app {
+@media (max-width: 767px){
+    .app{
         min-height: 100vh;
     }
     
-    .content {
+    .content{
         padding: 15px;
         margin-left: 0;
         padding-top: 70px;
     }
     
-    .hamburger {
+    .hamburger{
         display: flex;
     }
     
-    .close-sidebar {
+    .close-sidebar{
         display: block;
     }
     
-    .top-right {
+    .top-right{
         gap: 8px;
     }
     
-    .signInBtn, .profileBtn {
+    .signInBtn, .profileBtn{
         padding: 8px 12px;
         font-size: 12px;
     }
     
-    .signInBtn span, .profileBtn span {
+    .signInBtn span, .profileBtn span{
         display: none;
     }
     
-    .hero-title {
+    .hero-title{
         font-size: 24px;
         bottom: 50px;
     }
     
-    .hero-tags {
+    .hero-tags{
         top: 10px;
         left: 10px;
     }
     
-    .hero-tags span {
+    .hero-tags span{
         padding: 4px 8px;
         font-size: 10px;
     }
     
-    .hero-friends {
+    .hero-friends{
         bottom: 10px;
         left: 10px;
     }
     
-    .hero-friends span {
+    .hero-friends span{
         font-size: 10px;
         padding: 4px 8px;
     }
     
-    .side-top h2 {
+    .side-top h2{
         font-size: 20px;
     }
     
-    .price {
+    .price{
         font-size: 18px;
     }
     
-    .buy-btn {
+    .buy-btn{
         padding: 10px;
         font-size: 14px;
     }
     
-    .hero-small-imgs {
+    .hero-small-imgs{
         flex-direction: column;
     }
     
-    .hero-small-imgs img {
+    .hero-small-imgs img{
         height: 120px;
     }
+
+    .offers h3{
+        text-align: center;
+    }
+
     
-    .offer-grid {
+    .offer-grid{
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 10px;
     }
     
-    .offer-item img {
+    .offer-item img{
         height: 100px;
     }
 }
 
-@media (max-width: 480px) {
-    .content {
+@media (max-width: 480px){
+    .content{
         padding: 10px;
         padding-top: 60px;
     }
     
-    .search {
+    .search{
         font-size: 12px;
         padding: 10px 12px;
     }
     
-    .mainBtn {
+    .mainBtn{
         width: 35px;
         height: 35px;
     }
     
-    .signInBtn, .profileBtn {
+    .signInBtn, .profileBtn{
         width: 35px;
         height: 35px;
         padding: 0;
         justify-content: center;
     }
     
-    .hero-image {
+    .hero-image{
         height: 250px;
     }
     
-    .hero-title {
+    .hero-title{
         font-size: 20px;
         bottom: 40px;
     }
     
-    .hero-tags span {
+    .hero-tags span{
         font-size: 9px;
         padding: 3px 6px;
     }
     
-    .offer-grid {
+    .offer-grid{
         grid-template-columns: repeat(2, 1fr);
     }
     
-    .offers h3 {
+    .offers h3{
         font-size: 20px;
+        text-align: center;
     }
 }
 
-.center-content {
+.center-content{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,20 +281,20 @@ body{
     text-align: center;
 }
 
-.hidden-mobile {
+.hidden-mobile{
     display: none;
 }
 
-.visible-mobile {
+.visible-mobile{
     display: block;
 }
 
-@media (min-width: 768px) {
-    .hidden-mobile {
+@media (min-width: 768px){
+    .hidden-mobile{
         display: inline;
     }
     
-    .visible-mobile {
+    .visible-mobile{
         display: none;
     }
 }
@@ -309,5 +315,5 @@ body{
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: #ff5722;
+    background: var(--primary-color);
 }

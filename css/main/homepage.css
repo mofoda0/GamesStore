@@ -114,7 +114,7 @@
 .buy-btn{
     width: 100%;
     padding: 12px;
-    background: linear-gradient(135deg, var(--primary-color), #ff5722);
+    background: var(--primary-color);
     color: white;
     border: none;
     border-radius: 8px;
@@ -127,7 +127,8 @@
 
 .buy-btn:hover{
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 107, 39, 0.4);
+    background: rgb(255, 85, 0);
+    box-shadow: 0 5px 15px rgba(255, 107, 29, 0.4);
 }
 
 .hero-small-imgs{
@@ -155,7 +156,6 @@
 .offers h3{
     font-size: 24px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .offer-grid{
@@ -165,26 +165,74 @@
     padding: 10px 0;
 }
 
-.offer-item{
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    transition: var(--transition);
-}
-
-.offer-item img{
+.flip-card{
+    background: transparent;
     width: 100%;
     height: 220px;
+    perspective: 1000px; 
+}
+
+.flip-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    border-radius: var(--border-radius);
+    transition: transform 1s ease;
+}
+
+.flip-card:hover .flip-inner{
+    transform: rotateY(180deg);
+    box-shadow: 0 10px 20px rgba(255, 107, 39, 0.3);
+    border-radius: var(--border-radius);
+}
+
+.flip-front, .flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.flip-front img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: var(--border-radius);
+}
+
+.flip-back{
+    background: url("../../images/sidetopbg.jpg");
+    color: var(--text-color);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card-btn{
+    width: 80%;
+    padding: 12px;
+    background: var(--bg-dark);
+    color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
     transition: var(--transition);
-    border: 2px solid white;
+    margin-top: 10px;
 }
 
-.offer-item:hover{
-    transform: translateY(-5px);
-}
-
-.offer-item:hover img{
-    box-shadow: 0 10px 20px rgba(255, 107, 39, 0.3);
-    border: 2px solid var(--primary-color);
+.card-btn:hover{
+    transform: translateY(-2px);
+    background: rgb(0, 0, 0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
