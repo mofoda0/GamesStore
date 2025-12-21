@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/steven/purchase.css">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="order-summary">
+        <img id="gameImage">
+        <div class="order-info">
+            <h2 id="gameName"></h2>
+            <div class="price">$<span id="gamePrice"></span></div>
+        </div>
+    </div>
+
+    <form onsubmit="completePurchase(event)">
+        <select required>
+            <option value="">Choose payment method</option>
+            <option>Visa</option>
+            <option>PayPal</option>
+            <option>Vodafone Cash</option>
+        </select>
+
+        <input type="text" placeholder="Card holder name" required>
+        <input type="password" placeholder="Security code" required>
+        <input type="email" placeholder="Email" required>
+
+        <button type="submit">Complete Purchase</button>
+    </form>
+
+</div>
+
+<script src="../../js/steven/purchase.js"></script>
+
+
+</body>
+</html>

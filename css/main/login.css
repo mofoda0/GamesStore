@@ -1,8 +1,15 @@
+.login-container{
+    background: var(--bg-dark);
+    transition: var(--transition);
+    min-height: 100vh;
+    width: 100%;
+}
+
 .login-section{
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
 }
 
 .login-box{

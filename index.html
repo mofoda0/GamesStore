@@ -6,26 +6,19 @@
     <title>Gamestore - home</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c271b14d42.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main/homepage.css">
     <link rel="stylesheet" href="css/main/navbar.css">
     <link rel="stylesheet" href="css/main/sidebar.css">
+    <link rel="stylesheet" href="css/main/homepage.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/cart-shopping-solid-full.svg">
 </head>
 
 <body>
-    <input type="checkbox" id="sidebar-toggle">
-    <label for="sidebar-toggle" class="hamburger">
-        <i class="fa-solid fa-bars fa-lg"></i>
-    </label>
 
     <div class="app">
         <aside class="sidebar">
             <div class="sidebar-header">
                 <div class="logo">Games Store</div>
-                <label for="sidebar-toggle" class="close-sidebar">
-                    <i class="fa-solid fa-times fa-lg"></i>
-                </label>
             </div>
             
             <nav class="menu">
@@ -33,17 +26,9 @@
                     <i class="fa-solid fa-house fa-lg"></i>
                     <span>Home</span>
                 </a>
-                <a href="html/beforelogin/library.html" class="menu-item">
-                    <i class="fa-solid fa-book fa-lg"></i>
-                    <span>Library</span>
-                </a>
-                <a href="html/beforelogin/community.html" class="menu-item">
+                <a href="html/beforelogin/catagories.html" class="menu-item">
                     <i class="fa-solid fa-city fa-lg"></i>
-                    <span>Community</span>
-                </a>
-                <a href="html/beforelogin/friends.html" class="menu-item">
-                    <i class="fa-solid fa-users fa-lg"></i>
-                    <span>Friends</span>
+                    <span>Catagories</span>
                 </a>
             </nav>
 
@@ -57,7 +42,11 @@
 
         <main class="content">
             <header class="top">
-                <input type="text" placeholder="Search orders" class="search">
+                <div class="top-left">
+
+
+                    <input type="text" placeholder="Search orders" class="search">
+                </div>
 
                 <div class="top-right">
                     <button class="mainBtn"><i class="fa-solid fa-basket-shopping fa-lg"></i></button>
@@ -178,5 +167,6 @@
             </section>
         </main>
     </div>
+
 </body>
 </html>

@@ -1,23 +1,25 @@
-
-.content{
-    flex: 1;
-    padding: 20px;
-    background: var(--bg-dark);
-    transition: var(--transition);
-    min-height: 100vh;
-    width: 100%;
+.content.full {
+    margin-left: 0;
 }
+
 
 .top{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     gap: 15px;
     margin-bottom: 20px;
 }
 
+.top-left{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
 .search{
-    width: 100%;
-    max-width: 500px;
+    width: 300px;
     padding: 12px 15px;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -25,7 +27,6 @@
     color: var(--text-color);
     font-size: 14px;
     transition: var(--transition);
-    margin: 0 auto;
 }
 
 .search:focus{
@@ -41,10 +42,9 @@
 
 .top-right{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
 }
 
 .mainBtn{
@@ -82,8 +82,6 @@
 .profileBtn{
     background: rgba(255, 255, 255, 0);
     color: var(--text-color);
-    border: none;
-    font-size: 1rem;
 }
 
 .mainBtn:hover{
