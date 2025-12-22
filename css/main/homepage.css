@@ -135,6 +135,7 @@
 .hero-small-imgs{
     display: flex;
     gap: 10px;
+    width: 50%;
 }
 
 .hero-small-imgs img{
